@@ -1,6 +1,6 @@
 {
   "max_reminders": 5,
-  "interval_seconds": 60,
+  "interval_seconds": 1,
   "reminder_text": "Time to record! Your tools aren't open yet.",
   
   "detect_list": [
