@@ -1,13 +1,12 @@
 {
   "max_reminders": 5,
-  "interval_seconds": 2,
-  "reminder_text": "Time to record! Your tools aren't open yet.",
+  "interval_seconds": 500,
+  "reminder_text": "You haven't started recording yet! Open your tools.",
   
   "detect_list": [
     "Google Docs",
     "Premiere Pro",
-    "OBS",
-    "Sound Recorder"
+    "OBS"
   ],
 
   "force_open": [
@@ -22,17 +21,13 @@
     {
       "type": "app",
       "target": "C:\Program Files\obs-studio\bin\64bit\obs64.exe"
-    },
-    {
-      "type": "app",
-      "target": "start ms-callrecorder:"
     }
   ],
 
   "_instructions": {
-    "max_reminders": "How many notifications to show before force-opening everything.",
-    "interval_seconds": "Time to wait between checks.",
-    "detect_list": "Names the script looks for in your open windows/processes.",
-    "force_open": "The actual paths/links to open. Note: Use double backslashes \\\\ for Windows paths."
+    "max_reminders": "Number of Windows notifications to show before opening apps.",
+    "interval_seconds": "How long (in seconds) to wait between each notification.",
+    "detect_list": "Words to look for in window titles/processes to see if you are working.",
+    "force_open": "Paths and URLs to open. Use double backslashes \\\\ for folders."
   }
 }
